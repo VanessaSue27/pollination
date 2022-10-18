@@ -2,11 +2,53 @@
 
 <html>
   <head>
-    <title>Pollination test repo</title>
+    <title>Create your story</title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>Test repository in order to practice git</h1>    
+    <nav>
+      <ul>
+        <a href="#howToPlay"><li> How to Play</li></a>
+        <a href="#Play"><li>Let's Play</li></a>
+      </ul>
+    </nav>
+
+    <header>
+      <h1>Create your story</h1>
+      <img src="https://www.storycubes.com/wp-content/uploads/sites/3/2019/09/de.png" alt="Picture of Story Cubes"/>
+      <h3> The best way to improve your imagination, practice your English and have fun with your friends! </h3> 
+    <br>
+    </header>
+
+    <section id="howToPlay">
+      <h3>How to Play:</h3>
+      <p><b>Easy:</b>Choose only 3 pictures and create your story. </p>
+      <p><b>Medium:</b>You have to use all the pictures in order to create your story. </p>
+      <p><b>Hard:</b>You have to use all the pictures in order to create your story but you cannot see all the pictures at once. <br>First you'll see just the introduction pictures, them you can see the development and later the conclusion. </p>
+    </section>
+
+    <section id="Play">
+      <div class="jogo">
+        <article class="introduction">
+          <h4 class="partOfTheGame">INTRODUCTION</h4>
+          <div class="intro"></div>
+          <img id="introImage" src="" height="100" />
+        </article>
+        <article class="development">
+          <h4 class="partOfTheGame">DEVELOPMENT</h4>
+          <div class="develop"></div>
+          <img id="developImage" src="" height="100" />
+        </article>
+        <article class="conclusion">
+          <h4 class="partOfTheGame">CONCLUSION</h4>
+          <div class="conc"></div>
+          <img id="concImage" src="" height="100" />
+        </article>
+      </div>
+      <button onclick="restart()" id="restartButton">Play Again</button>
+    </section> 
+    
+    <footer>Project by<a href="https://github.com/yasmingsdm"> Yasmin Dal Medico</a> </footer>
     <script src="./script.js"></script>
   </body>
 </html>

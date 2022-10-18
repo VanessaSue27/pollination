@@ -1,0 +1,69 @@
+body{
+    font-family: "Comic Sans MS", "Comic Sans", Arial;
+    background-color: rgba(0,255,255,0.2)
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+li{
+    display: inline;
+    padding:10px;
+    border: solid 1px black;
+}
+
+header{
+    text-align: center;
+}
+
+h1,h3{
+    color:#FF6347;
+}
+
+h1{
+    font-size: 50px;
+}
+#howToPlay{
+    text-align: center;
+}
+
+.jogo{
+    column-count: 3;
+}
+
+.introduction, .develop, .conc {
+    width: 250px;
+    height: 400px;
+    background: #FF6347;
+    text-align: center;
+    padding-top: 30px;
+    border-radius: 16px;
+    position: relative;
+    margin-top: 50px;
+}
+
+button{
+    border-radius: 15px;
+    background-color:#FF6347;
+    padding: 3px;
+    font-size: larger;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+}
+
+a{
+    color:#FF6347;
+}
+
+a:hover {
+    color: blue;
+}
+
+footer{
+    text-align: center;
+    margin-top: 10px;
+}

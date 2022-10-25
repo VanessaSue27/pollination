@@ -35,12 +35,16 @@ h1{
 
 .introduction, .development, .conclusion {
     width: 250px;
-    height: 400px;
-    background: #FF6347;
+    height: 200px;
+    border: #FF6347 5px solid;
     text-align: center;
     padding-top: 30px;
     border-radius: 16px;
     position: relative;
+}
+
+.introIMG, .developIMG, .concIMG{
+    font-size: 50px;
 }
 
 .jogo{

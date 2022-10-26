@@ -58,43 +58,29 @@ const conc=[
 ]
 
 // Functions to appear the image when clicking on the orange rectangle:
-let mode = ''
+function play(){
+    
+    if (document.getElementById('hard').checked ==true){
+        document.getElementById('introImg').innerHTML = intro
 
-switch (mode){ //MAYBE MY SWITCH IS WRONG BECAUSE IT IS NOT WORKING WITH IT
-    case (document.getElementById('easy').checked ==true):
-    mode = 'easy'
-    break;
-
-    case (document.getElementById('medium').checked ==true):
-    mode = 'medium'
-    break;
-
-    case (document.getElementById('hard').checked ==true):
-    mode = 'hard'
-    break;
-
-}
-
-console.log(mode)
-
-if (mode ==='hard'){
-    document.getElementById('introduction').onclick = ()=> {
-    document.getElementById('introImg').innerHTML = intro
-    }
-
-    document.getElementById('development').onclick = ()=> {
-    document.getElementById('developImg').innerHTML = develop
-    }
-
-    document.getElementById('conclusion').onclick = ()=> {
-    document.getElementById('concImg').innerHTML = conc
-    }
-} else {
-    document.getElementById('play').onclick = ()=> {
-    document.getElementById('introImg').innerHTML = intro
-    document.getElementById('developImg').innerHTML = develop
-    document.getElementById('concImg').innerHTML = conc
+        document.getElementById('development').onclick = ()=> {
+        document.getElementById('developImg').innerHTML = develop
         }
+
+        document.getElementById('conclusion').onclick = ()=> {
+        document.getElementById('concImg').innerHTML = conc
+        }
+        document.getElementById('restartButton').disabled = false
+
+    } else if (document.getElementById('medium').checked ==true || document.getElementById('easy').checked ==true) {
+        document.getElementById('introImg').innerHTML = intro
+        document.getElementById('developImg').innerHTML = develop
+        document.getElementById('concImg').innerHTML = conc
+        document.getElementById('restartButton').disabled = false
+
+    } else {alert ('Choose how you want to play.')}
+
+    
 }
 
 //Refresh the page to play again:

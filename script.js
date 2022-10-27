@@ -23,8 +23,10 @@ const pictures=[
 
 // Function to choose randonly 3 pictures for each orange rectangles: 
 const choosePic = pictures =>{
-    return pictures [Math.floor(Math.random()*pictures.length)];
-    pictures.splice(pictures, 1) //NOT WORKING
+    const randomNumber = Math.floor(Math.random()*pictures.length)
+    const pic = pictures [randomNumber];
+    pictures.splice(randomNumber, 1) 
+    return pic
 }
 
 const intro1 = choosePic(pictures)

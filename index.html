@@ -24,27 +24,32 @@
       <p><b>Easy:</b>Choose only 3 pictures and create your story. </p>
       <p><b>Medium:</b>You have to use all the pictures in order to create your story. </p>
       <p><b>Hard:</b>You have to use all the pictures in order to create your story but you cannot see all the pictures at once. <br>First you'll see just the introduction pictures, them you can see the development and later the conclusion. </p>
+      <p>Choose the way you want to play:</p>
+      <label for="easy">Easy</label>
+      <input type="radio" name="howToPlay" value="easy" id="easy">
+      <label for="medium">Medium</label>
+      <input type="radio" name="howToPlay" value="medium" id="medium">
+      <label for="hard">Hard</label>
+      <input type="radio" name="howToPlay" value="hard" id="hard">
+      <button onclick="play()" id="playbutton">Play</button>
     </section>
 
     <section id="Play">
       <div class="jogo">
-        <article class="introduction">
+        <article class="introduction" id="introduction">
           <h4 class="partOfTheGame">INTRODUCTION</h4>
-          <div class="intro"></div>
-          <img id="introImage" src="" height="100" />
+          <p id=introImg class="introIMG"> </p>
         </article>
-        <article class="development">
+        <article class="development" id="development">
           <h4 class="partOfTheGame">DEVELOPMENT</h4>
-          <div class="develop"></div>
-          <img id="developImage" src="" height="100" />
+          <p id="developImg" class="developIMG"></p>
         </article>
-        <article class="conclusion">
+        <article class="conclusion" id="conclusion">
           <h4 class="partOfTheGame">CONCLUSION</h4>
-          <div class="conc"></div>
-          <img id="concImage" src="" height="100" />
+          <p id="concImg" class="concIMG"></p>
         </article>
       </div>
-      <button onclick="restart()" id="restartButton">Play Again</button>
+      <button onclick="restart()" id="restartButton" disabled="false">Play Again</button>
     </section> 
     
     <footer>Project by<a href="https://github.com/yasmingsdm"> Yasmin Dal Medico</a> </footer>

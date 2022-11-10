@@ -1,6 +1,6 @@
 ## Create a Story
 
-This project goal's was to create the game Story Cubes. 
+This project goal's was to create the game Story Cubes. <br>
 With 9 random pictures you have to create a story. 
 This is a good game to use in a Conversation Class.
 

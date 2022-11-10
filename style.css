@@ -47,10 +47,6 @@ h1{
     font-size: 50px;
 }
 
-.jogo{
-    column-count: 3;
-}
-
 button{
     border-radius: 15px;
     background-color:#FF6347;
@@ -73,4 +69,22 @@ a:hover {
 footer{
     text-align: center;
     margin-top: 10px;
+}
+
+@media only screen and (min-width:1024px){
+    .jogo{
+        column-count: 3;
+    }
+}
+
+@media only screen and (max-width:1024px){
+    .introImg{
+        max-width: 500px
+    }
+
+    .introduction, .development, .conclusion{
+        margin-top: 20px;
+        margin-left:auto;
+        margin-right:auto;
+    }
 }
